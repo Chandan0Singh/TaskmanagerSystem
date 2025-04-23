@@ -155,7 +155,7 @@ export default function TaskForm({ onData, onClose }) {
 
       <button
         type="submit"
-        className="w-full bg-[#ffba00] hover:scale-[102%] text-white font-semibold py-3 rounded-xl transition-all duration-200"
+        className="w-full bg-[#ffba00] hover:scale-[102%] text-white font-semibold py-3 rounded-[3rem] transition-all duration-200"
       >
         Add User
       </button>

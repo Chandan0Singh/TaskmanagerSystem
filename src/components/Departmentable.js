@@ -122,7 +122,7 @@ const TaskTable = ({designationOption}) => {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="Search task..."
-                className="w-96 py-1 pl-6 border bg-gray-200 rounded-full focus:outline-none focus:ring-2"
+                className="w-96 py-1 pl-6 bg-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-[#ffba00] transition-all duration-200"
               />
             </div>
 
@@ -159,7 +159,7 @@ const TaskTable = ({designationOption}) => {
 
             <button
               onClick={() => setShowForm(true)}
-              className="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-700"
+              className="bg-[#ffba00] text-white px-6 py-2 rounded-full hover:scale-110 mt-1"
             >
               Create User
             </button>
@@ -213,7 +213,7 @@ const TaskTable = ({designationOption}) => {
                         <div className="flex justify-center space-x-2">
                           <button
                             onClick={() => handleDelete(user._id)}
-                            className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-700"
+                            className="bg-[#ffba00] text-white px-4 py-1 rounded-[2rem] hover:scale-110"
                           >
                             Delete
                           </button>

@@ -73,13 +73,13 @@ const TaskTable = () => {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               placeholder="Search designation..."
-              className="w-96 py-1 pl-6 border bg-gray-200 rounded-full focus:outline-none focus:ring-2"
+              className="w-96 py-1 pl-6 bg-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-[#ffba00] transition-all duration-200"
             />
           </div>
 
           <button
             onClick={handleAdd}
-            className="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-700 transition duration-200"
+            className="bg-[#ffba00] text-white px-6 py-2 rounded-full hover:scale-110 transition duration-200 mt-1"
           >
             Create Designation
           </button>
@@ -132,7 +132,7 @@ const TaskTable = () => {
                   <td className="border px-4 border-yellow-500 py-2">
                     <button
                       onClick={() => handleDelete(item._id)}
-                      className="text-white bg-red-500 px-3 py-1 rounded hover:bg-red-600"
+                      className="text-white bg-[#ffba00] px-4 py-1 rounded-[2rem] hover:scale-110"
                     >
                       Delete
                     </button>

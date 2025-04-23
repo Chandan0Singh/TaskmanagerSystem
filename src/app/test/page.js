@@ -75,7 +75,7 @@ const TaskTable = () => {
           <div>
             <button
               onClick={() => setShowForm(!showForm)}
-              className="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-700 transition duration-200 "
+              className="bg-[#ffba00] text-white px-6 py-2 rounded-full hover:scale-110 transition duration-200 "
             >
               Create Task
             </button>

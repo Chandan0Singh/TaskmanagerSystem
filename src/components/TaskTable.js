@@ -93,13 +93,13 @@ const TaskTable = ({ designationOption }) => {
         <div className="w-full">
           {/* Search & Create Task */}
           <div className="flex justify-between mb-3 w-[90%] mx-auto">
-            <div className="flex items-center">
+            <div className="flex items-center mt-1">
               <p className="pr-2 text-lg font-semibold">Search:</p>
               <input
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="Search task..."
-                className="w-96 py-1 pl-6 bg-gray-200 rounded-full focus:outline-none focus:ring-2"
+                className="w-96 py-1 pl-6 bg-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-[#ffba00]"
               />
             </div>
 
@@ -174,7 +174,7 @@ const TaskTable = ({ designationOption }) => {
                     <td className="border border-[#ffba00] px-2">{task.time}</td>
                     <td className="border border-[#ffba00] px-2">
                       <span
-                        className={`px-2 py-1 rounded-full text-white ${
+                        className={`px-3 py-1 rounded-full text-white ${
                           {
                             Done: "bg-green-500",
                             Pending: "bg-purple-500",
